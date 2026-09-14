@@ -19,15 +19,9 @@
     "@iconify/react": "^6.0.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
-    "html-react-parser": "^6.1.7",
-    "prop-types": "^15.8.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-ga4": "^3.0.1",
-    "react-scroll": "^1.9.3",
-    "react-slick": "^0.31.0",
-    "slick-carousel": "^1.8.1",
-    "sweetalert2": "^11.26.25"
+    "react-ga4": "^3.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^7.0.1",

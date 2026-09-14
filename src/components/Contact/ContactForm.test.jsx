@@ -7,11 +7,6 @@ import {
   waitFor,
 } from "@testing-library/react";
 import { ContactForm } from "./ContactForm";
-import Swal from "sweetalert2";
-
-vi.mock("sweetalert2", () => ({
-  default: { fire: vi.fn(), showLoading: vi.fn() },
-}));
 
 vi.mock("../../utils/analytics", () => ({
   trackEvent: vi.fn(),
@@ -53,10 +48,8 @@ describe("ContactForm", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /send message/i }));
 
-    expect(Swal.fire).toHaveBeenCalledWith(
-      expect.objectContaining({
-        text: "Please enter a valid email address",
-      })
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "Please enter a valid email address.",
     );
     expect(fetch).not.toHaveBeenCalled();
   });
@@ -69,10 +62,8 @@ describe("ContactForm", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /send message/i }));
 
-    expect(Swal.fire).toHaveBeenCalledWith(
-      expect.objectContaining({
-        text: "Please complete the security check",
-      })
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "Please complete the security check.",
     );
     expect(fetch).not.toHaveBeenCalled();
   });
@@ -121,10 +112,8 @@ describe("ContactForm", () => {
       );
     });
 
-    expect(Swal.fire).toHaveBeenCalledWith(
-      expect.objectContaining({
-        text: "Message sent",
-      })
+    expect(await screen.findByRole("status")).toHaveTextContent(
+      "Your message was sent successfully.",
     );
   });
 
@@ -172,10 +161,8 @@ describe("ContactForm", () => {
     fireEvent.click(screen.getByRole("button", { name: /send message/i }));
 
     await waitFor(() => {
-      expect(Swal.fire).toHaveBeenCalledWith(
-        expect.objectContaining({
-          text: "Your message could not be sent at this time. Please try again later",
-        })
+      expect(screen.getByRole("alert")).toHaveTextContent(
+        "Your message could not be sent at this time. Please try again later.",
       );
       expect(window.turnstile.reset).toHaveBeenCalledWith("widget-id");
     });

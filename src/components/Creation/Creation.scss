@@ -1,4 +1,4 @@
-@use "../../sass/default" as theme;
+@use "../../sass/default/tokens" as theme;
 
 .st-portfolio {
 	display: block;
@@ -53,10 +53,6 @@
 			opacity: 1;
 		}
 
-		.st-portfolio-item-hover {
-			opacity: 1;
-			visibility: visible;
-		}
 	}
 
 	.st-portfolio-img {
@@ -75,36 +71,6 @@
 	&:hover .st-portfolio-img img {
 		opacity: 0.72;
 		transform: scale(1.04);
-	}
-}
-
-.st-portfolio-item-hover {
-	position: absolute;
-	top: 38%;
-	left: 0;
-	transition: all 0.4s ease;
-	z-index: 5;
-	text-align: center;
-	opacity: 0;
-	visibility: hidden;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-
-	span {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 42px;
-		padding: 0 18px;
-		border: 1px solid rgba(68, 248, 254, 0.8);
-		border-radius: 999px;
-		background-color: rgba(7, 13, 27, 0.86);
-		box-shadow: 0 0 24px rgba(68, 248, 254, 0.16);
-		color: theme.$base-color1;
-		font-size: 14px;
-		font-weight: 600;
-		white-space: nowrap;
 	}
 }
 

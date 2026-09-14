@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
 import "./Hero.scss";
-import perser from "html-react-parser";
 import SocialLinks2 from "../SocialLinks/SocialLinks2";
 
 const Hero = ({ data, socialData }) => {
-  const { title, text, imgAuthor, bgImgLink } = data;
+  const { greeting, name, text, imgAuthor, bgImgLink } = data;
 
   return (
     <section
@@ -36,21 +34,16 @@ const Hero = ({ data, socialData }) => {
             />
           </div>
           <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-            {perser(title)}
+            {greeting} <span>{name}</span>
           </h1>
           <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-            {perser(text)}
+            {text}
           </p>
           <SocialLinks2 data={socialData} />
         </div>
       </div>
     </section>
   );
-};
-
-Hero.propTypes = {
-  data: PropTypes.object,
-  socialData: PropTypes.array,
 };
 
 export default Hero;

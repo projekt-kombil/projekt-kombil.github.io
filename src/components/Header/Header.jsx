@@ -1,13 +1,16 @@
 import "./Header.scss";
-import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
+
+const navItems = [
+  { id: "home", label: "Overview" },
+  { id: "about", label: "About" },
+  { id: "portfolio", label: "Portfolio" },
+  { id: "creations", label: "Creations" },
+  { id: "contact", label: "Contact" },
+];
 
 const Header = () => {
   const [mobileToggle, setMobileToggle] = useState(false);
-
-  const handleToggleMenu = () => {
-    setMobileToggle(!mobileToggle);
-  };
 
   return (
     <header className="st-site-header st-sticky-header st-style2">
@@ -21,7 +24,7 @@ const Header = () => {
               <div className="st-header-author">
                 <img
                   src="/images/section/hero_portrait.webp"
-                  alt="author image"
+                  alt="Alefay Kombil"
                   width="800"
                   height="800"
                   loading="eager"
@@ -34,75 +37,22 @@ const Header = () => {
                 <ul
                   className="st-nav-list st-onepage-nav"
                   id="primary-navigation"
-                  style={{ display: `${mobileToggle ? "block" : "none"}` }}
+                  style={{ display: mobileToggle ? "block" : "none" }}
                 >
-                  <li>
-                    <ScrollLink
-                      to="home"
-                      spy={true}
-                      smooth={true}
-                      offset={-50}
-                      duration={500}
-                      onClick={() => setMobileToggle(false)}
-                    >
-                      Overview
-                    </ScrollLink>
-                  </li>
-                  <li>
-                    <ScrollLink
-                      to="about"
-                      spy={true}
-                      smooth={true}
-                      offset={-50}
-                      duration={500}
-                      onClick={() => setMobileToggle(false)}
-                    >
-                      About
-                    </ScrollLink>
-                  </li>
-                  <li>
-                    <ScrollLink
-                      to="portfolio"
-                      spy={true}
-                      smooth={true}
-                      offset={-50}
-                      duration={500}
-                      onClick={() => setMobileToggle(false)}
-                    >
-                      Portfolio
-                    </ScrollLink>
-                  </li>
-                  <li>
-                    <ScrollLink
-                      to="creations"
-                      spy={true}
-                      smooth={true}
-                      offset={-50}
-                      duration={500}
-                      onClick={() => setMobileToggle(false)}
-                    >
-                      Creations
-                    </ScrollLink>
-                  </li>
-                  <li>
-                    <ScrollLink
-                      to="contact"
-                      spy={true}
-                      smooth={true}
-                      offset={-50}
-                      duration={500}
-                      onClick={() => setMobileToggle(false)}
-                    >
-                      Contact
-                    </ScrollLink>
-                  </li>
+                  {navItems.map(({ id, label }) => (
+                    <li key={id}>
+                      <a href={`#${id}`} onClick={() => setMobileToggle(false)}>
+                        {label}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
                 <button
                   type="button"
                   className={`st-munu-toggle ${
                     mobileToggle ? "st-toggle-active" : ""
-                  } `}
-                  onClick={handleToggleMenu}
+                  }`}
+                  onClick={() => setMobileToggle((isOpen) => !isOpen)}
                   aria-expanded={mobileToggle}
                   aria-controls="primary-navigation"
                   aria-label="Toggle menu"

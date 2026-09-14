@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "./About.scss";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
@@ -36,13 +35,6 @@ const About = ({ data }) => {
 									<div className="st-text-block-text">
 										<p>{text}</p>
 									</div>
-									{/* <ul className="st-text-block-details st-mp0">
-										{details.map((item, index) => (
-											<li key={index}>
-												<span>{item.title}</span> : <span>{item.info}</span>
-											</li>
-										))}
-									</ul> */}
 								</div>
 							</div>
 						</div>
@@ -51,10 +43,6 @@ const About = ({ data }) => {
 			</div>
 		</section>
 	);
-};
-
-About.propTypes = {
-	data: PropTypes.object,
 };
 
 export default About;

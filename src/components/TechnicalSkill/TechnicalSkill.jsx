@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import "./TechnicalSkill.scss";
 
@@ -22,7 +21,7 @@ const TechnicalSkill = ({ data }) => {
                 <div className="st-iconbox-icon">
                   <img
                     src={element.imgLink}
-                    alt="Icon"
+                    alt={`${element.title} logo`}
                     width="52"
                     height="52"
                     loading="lazy"
@@ -40,10 +39,6 @@ const TechnicalSkill = ({ data }) => {
       <div className="st-height-b70 st-height-lg-b50"></div>
     </section>
   );
-};
-
-TechnicalSkill.propTypes = {
-  data: PropTypes.object,
 };
 
 export default TechnicalSkill;

@@ -1,5 +1,4 @@
 {
-  "experienceTitle": "Experience",
   "experience": [
     {
       "title": "Tech Developer",
@@ -24,27 +23,6 @@
       "duration": "Jun 2021 - Jul 2021",
       "subtitle": "SwitchMaven, National Capital District",
       "text": "Utilized the MERN stack and Grommet, a JavaScript theming library, to develop a cryptocurrency trading application, showcasing my proficiency in modern web technologies. I played a key role in the development of various features of the application, enhancing its functionality and user experience. I collaborated effectively with a team of developers, ensuring the timely delivery of the application that met clients requirements"
-    }
-  ],
-  "educationTitle": "Education",
-  "education": [
-    {
-      "title": "Software Development",
-      "duration": "2020 - 2021",
-      "subtitle": "SwitchMaven Bootcamp",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-    },
-    {
-      "title": "Java Programming Certificate",
-      "duration": "2020 - 2021",
-      "subtitle": "University of Papua New Guinea (CEIT)",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
-    },
-    {
-      "title": "Advanced Web Technology Certificate",
-      "duration": "2020",
-      "subtitle": "University of Papua New Guinea (CEIT)",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
     }
   ]
 }

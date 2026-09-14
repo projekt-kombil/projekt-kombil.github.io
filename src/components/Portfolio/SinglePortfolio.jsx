@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const SinglePortfolio = ({ element }) => {
   const { title, duration, subtitle, text } = element;
   return (
@@ -12,10 +10,6 @@ const SinglePortfolio = ({ element }) => {
       </div>
     </div>
   );
-};
-
-SinglePortfolio.propTypes = {
-  element: PropTypes.object,
 };
 
 export default SinglePortfolio;

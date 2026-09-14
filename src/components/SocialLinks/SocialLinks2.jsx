@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 const SocialLinks2 = ({ data }) => {
   return (
@@ -25,10 +24,6 @@ const SocialLinks2 = ({ data }) => {
       ))}
     </div>
   );
-};
-
-SocialLinks2.propTypes = {
-  data: PropTypes.array,
 };
 
 export default SocialLinks2;

@@ -1,18 +1,8 @@
-import PropTypes from "prop-types";
-// import { Icon } from "@iconify/react";
-
 const SingleCreation = ({ data, getData }) => {
-  const {
-    imgLink,
-    imgLinkLg,
-    title,
-    subtitle,
-    link,
-    technology,
-  } = data;
+  const { imgLink, title, subtitle, technology } = data;
 
   const openCreation = () => {
-    getData(imgLinkLg, title, subtitle, link, technology);
+    getData(data);
   };
   const visibleTechnology = technology?.slice(0, 3) || [];
 
@@ -29,6 +19,7 @@ const SingleCreation = ({ data, getData }) => {
         className="st-portfolio-single st-style1"
         role="button"
         tabIndex="0"
+        aria-label={`View details for ${title}`}
         onClick={openCreation}
         onKeyDown={handleKeyDown}
       >
@@ -43,9 +34,6 @@ const SingleCreation = ({ data, getData }) => {
                 loading="lazy"
                 decoding="async"
               />
-            </div>
-            <div className="st-portfolio-item-hover">
-              <span>View project</span>
             </div>
             <div className="st-portfolio-content">
               <p>{subtitle}</p>
@@ -63,11 +51,6 @@ const SingleCreation = ({ data, getData }) => {
       </div>
     </div>
   );
-};
-
-SingleCreation.propTypes = {
-  data: PropTypes.object,
-  getData: PropTypes.func,
 };
 
 export default SingleCreation;

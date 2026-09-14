@@ -1,9 +1,4 @@
-@use "../../sass/default" as theme;
-
-#st-alert {
-  font-size: 15px;
-  font-weight: 300;
-}
+@use "../../sass/default/tokens" as theme;
 
 .st-contact-title {
   font-size: 30px;
@@ -26,7 +21,6 @@
     }
   }
 }
-
 .st-form-field {
   width: 100%;
   margin-bottom: 30px;
@@ -70,6 +64,26 @@
 .st-form-error {
   color: #ff8d8d;
   margin: -15px 0 20px;
+}
+
+.st-form-notice {
+  margin: -10px 0 20px;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 7px;
+  line-height: 1.5;
+}
+
+.st-form-notice-success {
+  color: #b8f5ce;
+  background: rgba(40, 167, 69, 0.12);
+  border-color: rgba(40, 167, 69, 0.4);
+}
+
+.st-form-notice-error {
+  color: #ffb8b8;
+  background: rgba(220, 53, 69, 0.12);
+  border-color: rgba(220, 53, 69, 0.4);
 }
 
 // Contact Info Wrap
@@ -199,34 +213,4 @@
       }
     }
   }
-}
-
-.swal2-popup.st-alert-popup {
-  border: 1px solid rgba(68, 248, 254, 0.34);
-  border-radius: 8px;
-  box-shadow:
-    0 28px 90px rgba(0, 0, 0, 0.42),
-    0 0 36px rgba(68, 248, 254, 0.1);
-}
-
-.swal2-html-container.st-alert-text {
-  color: theme.$base-color2;
-  font-size: 16px;
-  line-height: 1.55em;
-}
-
-.swal2-close.st-alert-close {
-  color: theme.$base-color2;
-
-  &:hover {
-    color: theme.$base-color1;
-  }
-}
-
-.swal2-confirm.st-alert-button {
-  background-color: theme.$base-color1;
-  border: 1px solid theme.$base-color1;
-  border-radius: 999px;
-  color: theme.$dark-color2;
-  font-weight: 600;
 }

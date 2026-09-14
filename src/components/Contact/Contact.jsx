@@ -1,10 +1,8 @@
 import SectionHeading from "../SectionHeading/SectionHeading";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import ContactForm from "./ContactForm";
-import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 import "./Contact.scss";
-
 
 const Contact = ({ data, socialData }) => {
   const { title, text, subtitle } = data;
@@ -22,7 +20,6 @@ const Contact = ({ data, socialData }) => {
         <div className="row d-flex">
           <div className="col-lg-6">
             <h3 className="st-contact-title">Get in Touch</h3>
-            <div id="st-alert"></div>
             <ContactForm />
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
@@ -40,15 +37,6 @@ const Contact = ({ data, socialData }) => {
                   <a href="mailto:info@x07s.com">info@x07s.com</a>
                 </div>
               </div>
-              {/* <div className="st-single-contact-info">
-								<div className="st-icon-wrap">
-									<Icon icon="fa-solid:phone-alt" />
-								</div>
-								<div className="st-single-info-details">
-									<h4>Phone</h4>
-									<span>+675 7123-2456</span>
-								</div>
-							</div> */}
               <div className="st-single-contact-info">
                 <div className="st-icon-wrap">
                   <Icon icon="mdi:location" />
@@ -69,11 +57,6 @@ const Contact = ({ data, socialData }) => {
       <div className="st-height-b100 st-height-lg-b80"></div>
     </section>
   );
-};
-
-Contact.propTypes = {
-  data: PropTypes.object,
-  socialData: PropTypes.array,
 };
 
 export default Contact;

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "./Creation.scss";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { useState } from "react";
@@ -7,32 +6,27 @@ import Modal from "../Modal/Modal";
 import { trackEvent } from "../../utils/analytics";
 
 const CreationSection = ({ data }) => {
-  // Modal
-  const [modal, setModal] = useState(false);
-  const [tempData, setTempData] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const getData = (imgLink, title, subtitle, link, technology) => {
-    const tempData = [imgLink, title, subtitle, link, technology];
-    setTempData((item) => [1, ...tempData]);
+  const openProject = (project) => {
+    setSelectedProject(project);
     trackEvent("project_modal_open", {
-      project_title: title,
-      project_url: link || "none",
+      project_title: project.title,
+      project_url: project.link || "none",
     });
-    setModal(true);
   };
 
-  const modalClose = () => {
-    setModal(false);
-  };
+  const closeProject = () => setSelectedProject(null);
 
-  // Load Items
   const { creationItems } = data;
   const itemsPerPage = 6;
   const [visibleItems, setVisibleItems] = useState(
     creationItems.slice(0, itemsPerPage)
   );
 
-  const [showLoadMore, setShowLoadMore] = useState(true);
+  const [showLoadMore, setShowLoadMore] = useState(
+    creationItems.length > itemsPerPage,
+  );
 
   const loadMoreItems = () => {
     const currentLength = visibleItems.length;
@@ -59,13 +53,14 @@ const CreationSection = ({ data }) => {
         <div className="container">
           <div className="row">
             {visibleItems.map((element, index) => (
-              <SingleCreation data={element} key={index} getData={getData} />
+              <SingleCreation data={element} key={index} getData={openProject} />
             ))}
             <div className="col-lg-12 text-center">
               <div className="st-portfolio-btn">
                 {showLoadMore && (
                   <button
                     className="st-btn st-style1 st-color1"
+                    type="button"
                     onClick={loadMoreItems}
                   >
                     Load more
@@ -77,24 +72,18 @@ const CreationSection = ({ data }) => {
         </div>
         <div className="st-height-b100 st-height-lg-b80"></div>
       </section>
-      {modal === true ? (
+      {selectedProject && (
         <Modal
-          img={tempData[1]}
-          title={tempData[2]}
-          subtitle={tempData[3]}
-          link={tempData[4]}
-          technology={tempData[5]}
-          modalClose={modalClose}
+          img={selectedProject.imgLinkLg}
+          title={selectedProject.title}
+          subtitle={selectedProject.subtitle}
+          link={selectedProject.link}
+          technology={selectedProject.technology}
+          modalClose={closeProject}
         />
-      ) : (
-        ""
       )}
     </>
   );
-};
-
-CreationSection.propTypes = {
-  data: PropTypes.object,
 };
 
 export default CreationSection;
