@@ -6,17 +6,20 @@
 }
 
 .st-modal {
-  width: min(800px, calc(100% - 32px));
-  max-width: none;
-  padding: 0;
-  border: 0;
-  border-radius: 8px;
-  background: transparent;
-  color: inherit;
+  position: fixed;
+  z-index: 1055;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  overflow-y: auto;
+  background: rgba(7, 13, 27, 0.86);
 }
 
-.st-modal::backdrop {
-  background: rgba(7, 13, 27, 0.86);
+.st-modal .modal-dialog {
+  width: min(800px, 100%);
+  max-width: none;
+  margin: auto;
 }
 
 .modal-content {
