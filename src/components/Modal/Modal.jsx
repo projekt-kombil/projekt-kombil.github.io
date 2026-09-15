@@ -3,27 +3,22 @@ import "./Modal.scss";
 import { trackEvent } from "../../utils/analytics";
 
 const Modal = ({ img, title, subtitle, link, technology, modalClose }) => {
-  const closeButtonRef = useRef(null);
+  const dialogRef = useRef(null);
+  const ignoreCloseRef = useRef(false);
 
   useEffect(() => {
+    const dialog = dialogRef.current;
     const previouslyFocused = document.activeElement;
-    const previousOverflow = document.body.style.overflow;
 
-    document.body.style.overflow = "hidden";
-    closeButtonRef.current?.focus();
-
-    const handleKeyDown = (event) => {
-      if (event.key === "Escape") modalClose();
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
+    ignoreCloseRef.current = false;
+    dialog.showModal();
 
     return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = previousOverflow;
+      ignoreCloseRef.current = true;
+      if (dialog.open) dialog.close();
       previouslyFocused?.focus?.();
     };
-  }, [modalClose]);
+  }, []);
 
   const handleProjectClick = () => {
     trackEvent("project_outbound_click", {
@@ -33,13 +28,15 @@ const Modal = ({ img, title, subtitle, link, technology, modalClose }) => {
   };
 
   return (
-    <div
+    <dialog
       className="st-modal"
-      role="dialog"
-      aria-modal="true"
+      ref={dialogRef}
       aria-labelledby="creation-modal-title"
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) modalClose();
+      onClose={() => {
+        if (!ignoreCloseRef.current) modalClose();
+      }}
+      onClick={(event) => {
+        if (event.target === event.currentTarget) event.currentTarget.close();
       }}
     >
       <div className="modal-dialog modal-lg modal-dialog-centered">
@@ -55,8 +52,7 @@ const Modal = ({ img, title, subtitle, link, technology, modalClose }) => {
               type="button"
               className="btn-close"
               aria-label="Close project details"
-              onClick={modalClose}
-              ref={closeButtonRef}
+              onClick={() => dialogRef.current.close()}
             ></button>
           </div>
           <div className="modal-body">
@@ -91,7 +87,7 @@ const Modal = ({ img, title, subtitle, link, technology, modalClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </dialog>
   );
 };
 
