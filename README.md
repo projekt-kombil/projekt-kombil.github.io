@@ -1,12 +1,12 @@
 # Alefay Kombil
 
-This is my online portfolio.
+This is my personal portfolio, focused on the web interfaces, websites and practical UI/UX work I contribute to.
 
 ## About Me
 
-I am a front-end developer with a passion for UI/UX design. I build clear, practical, and engaging digital experiences that help businesses turn ideas into reliable web products.
+I am a frontend developer who turns ideas and designs into clear, dependable web experiences. My work centres on reusable interfaces and practical UI/UX decisions that make websites and applications straightforward to use and maintain.
 
-My experience spans React, Next.js, JavaScript, Node.js, PHP, WordPress, and CMS platforms. I work with businesses in Papua New Guinea, contributing across design, development, integrations, deployment, and ongoing site improvements.
+I work across React applications and WordPress websites, collaborating with developers, managers and clients from early requirements through development and deployment. Backend and API contributions, integrations, hosting and ongoing website maintenance support that frontend focus.
 
 ## Contact
 

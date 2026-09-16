@@ -49,7 +49,7 @@ const CreationSection = ({ data }) => {
     <>
       <section id="creations" className="st-dark-bg">
         <div className="st-height-b100 st-height-lg-b80"></div>
-        <SectionHeading title={"Creations"} />
+        <SectionHeading title={"Selected Work"} />
         <div className="container">
           <div className="row">
             {visibleItems.map((element, index) => (
@@ -63,7 +63,7 @@ const CreationSection = ({ data }) => {
                     type="button"
                     onClick={loadMoreItems}
                   >
-                    Load more
+                    View more work
                   </button>
                 )}
               </div>

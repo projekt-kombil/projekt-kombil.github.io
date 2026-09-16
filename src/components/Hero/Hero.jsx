@@ -25,7 +25,7 @@ const Hero = ({ data, socialData }) => {
           >
             <img
               src={imgAuthor}
-              alt="Author Image"
+              alt="Alefay Kombil"
               width="800"
               height="800"
               loading="eager"

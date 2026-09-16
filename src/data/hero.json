@@ -1,7 +1,7 @@
 {
   "imgAuthor": "/images/section/hero_portrait.webp",
   "bgImgLink": "/images/background/hero-bg.webp",
-  "greeting": "Hi, I am",
+  "greeting": "",
   "name": "Alefay Kombil",
-  "text": "Frontend developer with a passion for UI/UX design. I build beautiful and functional user interfaces with React and other frontend technologies."
+  "text": "Making pixels behave, one bug at a time."
 }

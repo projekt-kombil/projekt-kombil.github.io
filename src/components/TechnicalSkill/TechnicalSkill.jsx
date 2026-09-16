@@ -6,7 +6,7 @@ const TechnicalSkill = ({ data }) => {
   return (
     <section className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
-      <SectionHeading title={"Technical Skills"} />
+      <SectionHeading title={"How I Work"} />
       <div className="container">
         <div className="row">
           {services.map((element, index) => (

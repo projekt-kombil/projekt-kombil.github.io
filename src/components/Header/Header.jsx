@@ -4,8 +4,8 @@ import { useState } from "react";
 const navItems = [
   { id: "home", label: "Overview" },
   { id: "about", label: "About" },
-  { id: "portfolio", label: "Portfolio" },
-  { id: "creations", label: "Creations" },
+  { id: "portfolio", label: "Experience" },
+  { id: "creations", label: "Work" },
   { id: "contact", label: "Contact" },
 ];
 

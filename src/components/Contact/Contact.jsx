@@ -19,7 +19,7 @@ const Contact = ({ data, socialData }) => {
       >
         <div className="row d-flex">
           <div className="col-lg-6">
-            <h3 className="st-contact-title">Get in Touch</h3>
+            <h3 className="st-contact-title">Send a Message</h3>
             <ContactForm />
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>

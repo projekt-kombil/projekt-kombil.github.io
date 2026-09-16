@@ -7,7 +7,7 @@ const PortfolioSection = ({ data }) => {
   return (
     <section id="portfolio">
       <div className="st-height-b100 st-height-lg-b80"></div>
-      <SectionHeading title={"Portfolio"} />
+      <SectionHeading title={"Experience"} />
       <div
         className="container"
         data-aos="fade-up"
