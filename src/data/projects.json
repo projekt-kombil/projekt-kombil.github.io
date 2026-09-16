@@ -1,12 +1,44 @@
 {
   "creationItems": [
     {
+      "imgLink": "/images/portfolio/display_cards/bcpng_webp.webp",
+      "imgLinkLg": "/images/portfolio/bcpng-home.webp",
+      "title": "Business Council of Papua New Guinea Website",
+      "subtitle": "Contributed to Design, Development and Deployment",
+      "link": "https://bcpng.org.pg",
+      "technology": ["Figma", "Adobe XD", "WordPress", "JavaScript", "CSS"]
+    },
+    {
+      "imgLink": "/images/portfolio/display_cards/enbta_webp.webp",
+      "imgLinkLg": "/images/portfolio/enbta.webp",
+      "title": "East New Britain Tourism Authority Website",
+      "subtitle": "Website Design, Development and Deployment",
+      "technology": ["WordPress", "Figma", "PHP"],
+      "link": ""
+    },
+    {
+      "imgLink": "/images/portfolio/display_cards/atlas-steel-png_webp.webp",
+      "imgLinkLg": "/images/portfolio/atlas-steel-home.webp",
+      "title": "Atlas Steel PNG Website",
+      "subtitle": "Website Design and Development",
+      "link": "https://atlassteelpng.com.pg",
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
+    },
+    {
+      "imgLink": "/images/portfolio/display_cards/be-pac_webp.webp",
+      "imgLinkLg": "/images/portfolio/be-pacific-digital-agency.webp",
+      "title": "Be Pacific Digital Agency Website",
+      "subtitle": "Website Development and Deployment",
+      "technology": ["WordPress", "Figma", "PHP"],
+      "link": ""
+    },
+    {
       "imgLink": "/images/portfolio/display_cards/attendo_webp.webp",
       "imgLinkLg": "/images/portfolio/attendo.webp",
       "title": "Attendo",
-      "subtitle": "Design and Development",
+      "subtitle": "Frontend Development and Deployment",
       "link": "https://attendo.services",
-      "technology": ["Adobe XD", "React", "NextJS", "NodeJS", "AWS"]
+      "technology": ["Adobe XD", "React", "Next.js", "Node.js", "AWS"]
     },
     {
       "imgLink": "/images/portfolio/display_cards/alef-solutions_webp.webp",
@@ -14,47 +46,31 @@
       "title": "Alef Solutions",
       "subtitle": "Website Design and Development",
       "link": "https://alefsolutions.tech",
-      "technology": ["Adobe XD", "WordPress", "PHP", "Vanilla Javascript", "CSS"]
+      "technology": ["Adobe XD", "WordPress", "PHP", "JavaScript", "CSS"]
     },
     {
-      "imgLink": "/images/portfolio/display_cards/bcpng_webp.webp",
-      "imgLinkLg": "/images/portfolio/bcpng-home.webp",
-      "title": "Business Council of Papua New Guinea Website",
-      "subtitle": "Website Redesign and Development",
-      "link": "https://bcpng.org.pg",
-      "technology": ["Figma", "Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
-    },
-    {
-      "imgLink": "/images/portfolio/display_cards/atlas-steel-png_webp.webp",
-      "imgLinkLg": "/images/portfolio/atlas-steel-home.webp",
-      "title": "Atlas Steel PNG Website",
-      "subtitle": "Website Redesign and Development",
-      "link": "https://atlassteelpng.com.pg",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
-    },
-    {
-      "imgLink": "/images/portfolio/display_cards/lev-tziyon_webp.webp",
-      "imgLinkLg": "/images/portfolio/lev-tziyon.webp",
-      "title": "Lev Tziyon",
-      "subtitle": "Website Design and Development",
-      "link": "https://levtziyon.com",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
+      "imgLink": "/images/portfolio/display_cards/peta_webp.webp",
+      "imgLinkLg": "/images/portfolio/peta-home.webp",
+      "title": "PETA Sports Management Website",
+      "subtitle": "Website Design, Development and Deployment",
+      "link": "https://peta.com.pg",
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
     },
     {
       "imgLink": "/images/portfolio/display_cards/phantom-development-limited_webp.webp",
       "imgLinkLg": "/images/portfolio/phantom-development-home.webp",
       "title": "Phantom Development Limited",
-      "subtitle": "Website Design and Development",
+      "subtitle": "Website Design, Development and Deployment",
       "link": "https://phantomdevelopmentltd.com",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
     },
     {
       "imgLink": "/images/portfolio/display_cards/abus-na-kumu_webp.webp",
       "imgLinkLg": "/images/portfolio/abus-na-kumu-home.webp",
       "title": "Abus Na Kumu E-Commerce Website",
-      "subtitle": "Website Design and Development",
+      "subtitle": "Website Design, Development and Deployment",
       "link": "https://abusnakumu.com.pg",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
     },
     {
       "imgLink": "/images/portfolio/display_cards/solar-solutions_webp.webp",
@@ -62,22 +78,22 @@
       "title": "Solar Solutions Website",
       "subtitle": "Website Design and Development",
       "link": "https://solarsolutionspng.com",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
     },
     {
-      "imgLink": "/images/portfolio/display_cards/peta_webp.webp",
-      "imgLinkLg": "/images/portfolio/peta-home.webp",
-      "title": "PETA Sports Management Website",
-      "subtitle": "Website Design and Development",
-      "link": "https://peta.com.pg",
-      "technology": ["Adobe XD", "WordPress", "Vanilla Javascript", "CSS"]
+      "imgLink": "/images/portfolio/display_cards/lev-tziyon_webp.webp",
+      "imgLinkLg": "/images/portfolio/lev-tziyon.webp",
+      "title": "Lev Tziyon",
+      "subtitle": "Design and Development Contribution",
+      "link": "https://levtziyon.com",
+      "technology": ["Adobe XD", "WordPress", "JavaScript", "CSS"]
     },
     {
       "imgLink": "/images/portfolio/display_cards/crypto_webp.webp",
       "imgLinkLg": "/images/portfolio/crypto-home_webp.webp",
       "title": "Crypto Currency Trading Platform",
-      "subtitle": "Front-end Development",
-      "technology": ["React", "Grommet UI", "Vanilla Javascript", "CSS"],
+      "subtitle": "Reusable Frontend Component Development",
+      "technology": ["React", "Grommet", "JavaScript", "CSS"],
       "link": ""
     }
   ]
