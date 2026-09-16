@@ -27,22 +27,21 @@ const Home = () => {
     <>
       <Hero data={heroData} socialData={socialData} />
       <Suspense fallback={null}>
-        <About data={aboutData} data-aos="fade-right" />
+        <About data={aboutData} />
       </Suspense>
       <Suspense fallback={null}>
-        <TechnicalSkill data={servicesData} data-aos="fade-right" />
+        <TechnicalSkill data={servicesData} />
       </Suspense>
       <Suspense fallback={null}>
         <PortfolioSection data={resumeData} />
       </Suspense>
       <Suspense fallback={null}>
-        <CreationSection data={projectsData} data-aos="fade-right" />
+        <CreationSection data={projectsData} />
       </Suspense>
       <Suspense fallback={null}>
         <Contact
           data={contactData}
           socialData={socialData}
-          data-aos="fade-right"
         />
       </Suspense>
     </>
