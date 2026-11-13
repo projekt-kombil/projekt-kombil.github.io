@@ -1,28 +1,34 @@
 {
   "experience": [
     {
+      "title": "Web Developer",
+      "duration": "September 2026 - Present",
+      "subtitle": "SNS Technology",
+      "text": "I build and deploy WordPress websites, taking projects from development through to launch. Most of my work is in development, with smaller design adjustments along the way to help pages look and work as intended. I work across sites at different stages, following each build through to the point where people can use it."
+    },
+    {
       "title": "Tech Developer",
       "duration": "May 2025 - March 2026",
       "subtitle": "Alef Solutions, National Capital District",
-      "text": "I developed Attendo's frontend in React and Next.js alongside a backend developer, deployed it on Vercel and supported live pilot events. I worked with Resend for email delivery and contributed to its AWS Cognito registration integration. I also developed and maintained WordPress sites, managed content, domains and SSL, and prepared monthly performance reports while coordinating work through ClickUp and Git."
+      "text": "I worked alongside a backend developer to build Attendo's frontend with React and Next.js, deploy it on Vercel and support live pilot events. I set up email delivery with Resend and contributed to the AWS Cognito registration integration. Alongside the application work, I built and maintained WordPress sites, looked after content, domains and SSL, and prepared monthly performance reports. The role took me from building features to supporting them in use."
     },
     {
       "title": "Lead Full Stack Developer",
       "duration": "March 2022 - October 2025",
       "subtitle": "Be Pacific Digital Agency, National Capital District",
-      "text": "After joining the agency as a Full Stack Developer, I moved into the lead role and designed and developed client websites and web applications. My work included sites for Agora Education & Training Institute, Abus Na Kumu, the Business Council of Papua New Guinea and Be Pacific Digital Agency, alongside ongoing management and maintenance for clients including Atlas Steel, St John PNG and The Healthy Food Company. I also developed a reusable WordPress plugin and introduced Google Analytics and Data Studio reporting, collaborating through Jira, ClickUp, Slack and Git."
+      "text": "I joined as a Full Stack Developer and later moved into the lead role, designing and developing websites and web applications for clients including Agora Education & Training Institute, Abus Na Kumu, the Business Council of Papua New Guinea and Be Pacific Digital Agency. I also looked after existing sites for Atlas Steel, St John PNG and The Healthy Food Company. Along the way, I built a reusable WordPress plugin and introduced Google Analytics and Data Studio reporting, balancing new builds with the ongoing care that client websites need."
     },
     {
       "title": "Freelance Developer",
       "duration": "2023 - Present",
       "subtitle": "Freelance, National Capital District",
-      "text": "I design, develop, deploy and maintain websites for businesses and organisations. My work includes the East New Britain Tourism Authority, Be Pacific Digital, PETA Sports Management and Phantom Development websites. I also support hosting, domains, SSL, email setup and ongoing maintenance where needed."
+      "text": "I help businesses and organisations build and look after their websites, from design and development through to deployment and maintenance. My projects include sites for the East New Britain Tourism Authority, Be Pacific Digital, PETA Sports Management and Phantom Development. I also help with hosting, domains, SSL and email setup, taking care of the practical details that keep a website running after launch."
     },
     {
       "title": "Software Developer Intern",
       "duration": "June 2021 - July 2021",
       "subtitle": "SwitchMaven, National Capital District",
-      "text": "I developed reusable frontend components with React and Grommet for an Ethereum-focused cryptocurrency trading platform. I worked alongside other developers, reported to the Product Manager and took part in daily stand-ups, using Jira, Slack and Git to coordinate the work."
+      "text": "I built reusable frontend components with React and Grommet for an Ethereum-focused cryptocurrency trading platform. Working alongside other developers and reporting to the Product Manager gave me hands-on experience of contributing to a shared codebase. Daily stand-ups and tools such as Jira, Slack and Git helped me stay connected to the team's work and keep my own contributions moving."
     }
   ]
 }
